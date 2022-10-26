@@ -1,0 +1,28 @@
+{
+  "loggerConfig": {
+    "appenders": {
+      "app": {
+        "type": "file",
+        "filename": "logs/application.log"
+
+      },
+      "out": {
+        "type": "stdout"
+      }
+    },
+    "categories": {
+      "default": {
+        "appenders": ["app"],
+        "level": "error"
+      },
+      "app": {
+        "appenders": ["app","out"],
+        "level": "info"
+      },
+      "out": {
+        "appenders": ["out"],
+        "level": "info"
+      }
+    }
+  }
+}

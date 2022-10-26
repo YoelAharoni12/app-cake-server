@@ -1,0 +1,39 @@
+{
+  "name": "amaromach-server",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "format": "prettier --write .",
+    "start": "node dist/out-tsc/app.js",
+    "build": "tsc ",
+    "watch": "nodemon src/bin/www.ts"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@koa/cors": "^3.1.0",
+    "@types/koa__cors": "^3.0.3",
+    "joi": "^17.6.0",
+    "koa": "^2.13.4",
+    "koa-bodyparser": "^4.3.0",
+    "koa-json": "^2.0.2",
+    "koa-respond": "^2.1.0",
+    "koa-router": "^10.1.1",
+    "log4js": "^6.4.1",
+    "mongoose": "5.9.29",
+    "nconf": "^0.12.0"
+  },
+  "devDependencies": {
+    "@types/koa": "^2.13.4",
+    "@types/koa-bodyparser": "^5.0.2",
+    "@types/koa-router": "^7.4.4",
+    "@types/log4js": "^2.3.5",
+    "@types/mongoose": "5.7.17",
+    "@types/nconf": "^0.10.1",
+    "@types/node": "^17.0.42",
+    "nodemon": "^2.0.15",
+    "prettier": "^2.3.2",
+    "typescript": "^4.6.3"
+  }
+}
