@@ -1,4 +1,4 @@
 {
   "port": 4000,
-  "dbConnectionString": "mongodb://rmh_dev_user:psikDargato@rmh-dev-mdb-1,rmh-dev-mdb-2,rmh-dev-mdb-3/yoelHagever?replicaSet=rmh_dev&authSource=admin"
+  "dbConnectionString": "mongodb+srv://yoel:yoel1234@cluster0.rcxzklc.mongodb.net/cakes-app"
 }

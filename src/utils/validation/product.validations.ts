@@ -11,15 +11,4 @@ const productSchema = {
 };
 
 export const createProductSchema = Joi.object(productSchema)
-export const updateProductSchema = Joi.object(productSchema).fork(
-    Object.keys(productSchema),
-    (schema) => schema.optional()
-);
 export const productIdSchema = Joi.object({name: productSchema.name});
-const cartSchema = {
-    name: Joi.string().required().only(),
-    amount: Joi.number().positive().required(),
-};
-export const cartItemsSchema = Joi.array()
-    .unique("name")
-    .items(Joi.object(cartSchema));
